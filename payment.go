@@ -32,6 +32,9 @@ type PaymentRequestData struct {
 type PaymentResponseData struct {
 	OrderId    string `json:"order_id"`
 	PaymentURL string `json:"payment_url"`
+	ErrorType string `json:"error_type"`
+	Code int32 `json:"code"`
+	Message string `json:"message"`
 }
 
 type PaymentRequestDataItems struct {
